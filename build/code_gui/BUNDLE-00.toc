@@ -1,0 +1,3 @@
+([('code_gui',
+   '/Users/javier/Documents/persona_projects/PDF_to_Excell/code/dist/code_gui',
+   'EXECUTABLE')],)

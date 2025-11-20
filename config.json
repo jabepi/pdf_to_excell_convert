@@ -1,0 +1,50 @@
+{
+  "output_filename": "extracted_data.xlsx",
+  "extraction_fields": [
+    {
+      "name": "KG BRUTOS",
+      "page": 0,
+      "rect": [470, 510.55, 570, 522.943]
+    },
+    {
+      "name": "DESCUENTO",
+      "page": 0,
+      "rect": [470, 523.55, 570, 535.943]
+    },
+    {
+      "name": "KG NETOS",
+      "page": 0,
+      "rect": [470, 536.55, 570, 548.943]
+    },
+    {
+      "name": "PRECIO",
+      "page": 0,
+      "rect": [470, 549.55, 570, 561.943]
+    },
+    {
+      "name": "IMPORTE",
+      "page": 0,
+      "rect": [470, 562.55, 570, 574.943]
+    },
+    {
+      "name": "NIF EMPRESA",
+      "page": 0,
+      "rect": [220, 200.66503, 310 , 213.03102]
+    },
+    {
+      "name": "EMPRESA",
+      "page": 0,
+      "rect": [20, 200.66503, 200, 225]
+    },
+    {
+      "name": "BATEA",
+      "page": 0,
+      "rect": [243,149.00499,340,161.37099]
+    },
+    {
+      "name": "FECHA",
+      "page": 0,
+      "rect": [140, 118.66502, 212.55797, 131.03102]
+    }
+  ]
+}
