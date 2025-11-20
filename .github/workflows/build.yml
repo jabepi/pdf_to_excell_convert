@@ -1,0 +1,32 @@
+name: Build Windows Exe
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install Dependencies
+      run: |
+        pip install pandas openpyxl pymupdf pyinstaller
+
+    - name: Build Exe
+      # Note the semicolon ; for Windows
+      run: |
+        pyinstaller --onefile --windowed --add-data "config.json;." --add-data "PLANTILLA.xlsx;." find_coordenates.py
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: Windows_Executable
+        path: dist/*.exe
